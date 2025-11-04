@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Contacto | Carros Deportivos</title>
+    <link rel="stylesheet" href="./estilos.css">
+</head>
+
+<body class="fondo-contacto">
+    <!-- encabezado, con links que nos llevan a las otras paginas -->
+    <header>
+        <h1>Contacto</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="modelos.html">Modelos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="caracteristicas.html">caracteristicas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- este es para que los usuarios nos dejen sugerencias o preguntas sobre la pagina -->
+    <main>
+        <section class="formulario-contacto">
+            <h2>¿Tienes preguntas o sugerencias?</h2>
+            <form action="#" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- pie de página -->
+    <footer>
+        <p>&copy; 2025 Carros Deportivos.</p>
+    </footer>
+    
+</body>
+</html>

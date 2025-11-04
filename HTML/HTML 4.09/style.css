@@ -1,0 +1,13 @@
+body{
+    height: 999px;
+    background: linear-gradient(red, purple);
+    text-align: center;
+    h2{
+        text-align: center;
+        color: aqua;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    };
+    p{
+        color: rgb(26, 209, 151);
+    };
+};
