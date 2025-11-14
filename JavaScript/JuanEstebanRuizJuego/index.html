@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Demon Slayer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="juego">
+    <h2 class="titulo">GYUTARO</h2>
+
+    <img id="personaje" src="/imagenes/gyutaro.jpeg">
+
+    <h2 class="titulo">VIDA DEL DEMONIO</h2>
+
+    <div id="vida-contenedor">
+        <div id="vida"></div>
+    </div>
+
+    <h2 class="titulo">PODERES DEL CAZADOR</h2>
+
+    <div id="ataques">
+        <img class="btn" src="/imagenes/uzui.gif" onclick="ataque(10)">
+        <img class="btn" src="/imagenes/nezuko.gif" onclick="ataque(20)">
+        <img class="btn" src="/imagenes/tanjiro.gif" onclick="ataque(30)">
+    </div>
+
+    <h2 class="titulo">CURACION DEL DEMONIO</h2>
+
+    <img id="curar" src="/imagenes/medicina.gif" onclick="curarVida(15)">
+</div>
+
+<script src="juego.js"></script>
+</body>
+</html>
+

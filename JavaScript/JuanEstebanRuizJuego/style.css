@@ -1,0 +1,82 @@
+body {
+    background-image: url("/imagenes/monte.jpg");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    font-family: "Segoe UI", sans-serif;
+}
+
+#juego {
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    padding: 20px;
+    background: rgba(0,0,0,0.55);
+    color: white;
+    border-radius: 15px;
+    border: 2px solid #aa3333;
+    box-shadow: 0 0 15px #ff5555;
+}
+
+#vida-contenedor {
+    width: 300px;
+    height: 25px;
+    border: 2px solid white;
+    margin: 10px auto 25px auto; 
+    overflow: hidden;
+    background: rgba(255,255,255,0.2);
+    border-radius: 8px; 
+}
+
+#vida {
+    width: 300px;
+    height: 100%;
+    background: linear-gradient(#ff4444, #aa0000);
+    transition: width 0.2s ease-out;
+}
+
+#personaje {
+    width: 230px;
+    margin: 25px;
+    filter: drop-shadow(0 0 10px black);
+}
+
+#ataques {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#ataques .btn {
+    width: 90px;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.2s, filter 0.2s;
+    filter: drop-shadow(0 0 8px #ff9933);
+}
+
+#ataques .btn:hover {
+    transform: scale(1.15);
+    filter: drop-shadow(0 0 15px #ffdd33);
+}
+
+#curar {
+    width: 120px;
+    margin-top: 25px;
+    cursor: pointer;
+    transition: transform 0.2s, filter 0.2s;
+    filter: drop-shadow(0 0 8px #ff4444);
+}
+
+#curar:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 15px #ff7777);
+}
+
+.titulo {
+    font-size: 22px;
+    margin: 15px 0 10px 0;
+    text-shadow: 0 0 8px #ff3333;
+    color: #ffdddd;
+    letter-spacing: 2px;
+}
