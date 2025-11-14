@@ -1,5 +1,5 @@
 body {
-    background-image: url("/imagenes/monte.jpg");
+    background-image: url("imagenes/monte.jpg");
     background-size: cover;
     background-position: center;
     text-align: center;
@@ -22,10 +22,11 @@ body {
     width: 300px;
     height: 25px;
     border: 2px solid white;
-    margin: 10px auto 25px auto; 
+    margin: 10px auto 25px auto;
     overflow: hidden;
     background: rgba(255,255,255,0.2);
-    border-radius: 8px; 
+    border-radius: 8px;
+    position: relative;
 }
 
 #vida {
@@ -33,6 +34,19 @@ body {
     height: 100%;
     background: linear-gradient(#ff4444, #aa0000);
     transition: width 0.2s ease-out;
+}
+
+#vida-numero {
+    position: absolute;
+    width: 300px;
+    text-align: center;
+    top: 0;
+    left: 0;
+    line-height: 25px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 0 0 5px black;
+    pointer-events: none;
 }
 
 #personaje {
@@ -80,3 +94,4 @@ body {
     color: #ffdddd;
     letter-spacing: 2px;
 }
+

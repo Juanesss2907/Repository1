@@ -1,23 +1,24 @@
-vida = 300
-maxVida = 300
+var vidaActual = 300;
 
-function actualizarBarra() {
-    ancho = vida
-
-    excesoPositivo = (ancho - maxVida) * (ancho > maxVida)
-    excesoNegativo = (0 - ancho) * (ancho < 0)
-
-    ancho = ancho - excesoPositivo - excesoNegativo
-
-    document.getElementById("vida").style.width = ancho + "px"
+var limitesVida = [];
+for (var i = 0; i <= 300; i++) {
+    limitesVida[i] = i;
 }
 
-function ataque(cantidad) {
-    vida = vida - cantidad
-    actualizarBarra()
+function ataque(valor) {
+    vidaActual = limitesVida[(vidaActual - valor) * ((vidaActual - valor) >= 0) + 0 * ((vidaActual - valor) < 0)];
+    actualizarVida();
 }
 
-function curarVida(cantidad) {
-    vida = vida + cantidad
-    actualizarBarra()
+function curarVida(valor) {
+    vidaActual = limitesVida[(vidaActual + valor) * ((vidaActual + valor) <= 300) + 300 * ((vidaActual + valor) > 300)];
+    actualizarVida();
 }
+
+function actualizarVida() {
+    var barra = document.getElementById("vida");
+    var numero = document.getElementById("vida-numero");
+    barra.style.width = vidaActual + "px";
+    numero.innerHTML = vidaActual;
+}
+
